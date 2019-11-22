@@ -1,0 +1,21 @@
+Bootstrap:library
+From: debian:9
+
+%labels
+   AUTHOR stefano.russo@gmail.com
+
+%environment
+    # Environment variables sourced at runtime
+    MYVAR="42"
+    export MYVAR
+
+%post
+    # Build commands for the container are here
+    apt-get update && apt-get -y install python3 git wget
+    mkdir /data
+
+%runscript
+    # The runscript is the default runtime command
+    exec echo "Hello World! MYVAR=$MYVAR"
+
+    
