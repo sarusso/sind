@@ -1,6 +1,6 @@
 # Sind
 
-Singularity ready to use in Docker.
+Singularity in Docker, ready to use.
 
 ## Quickstart
 
@@ -16,7 +16,7 @@ Otherwise, to pull and use the prebuilt Docker images:
 
 ### Use
 
-To chek that singularity is correctly working inside Docker:
+To check that singularity is correctly working inside Docker:
 
     docker run --privileged -ti sind singularity -v
 
